@@ -22,7 +22,8 @@ jobs:
       run: npm install
 
     - name: Install Playwright Browsers
-      run: npx playwright install
+      - name: Install Playwright Browsers
+      run: npx --yes playwright install
     - name: Install FFmpeg
       run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
